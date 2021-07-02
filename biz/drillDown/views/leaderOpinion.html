@@ -1,0 +1,51 @@
+<style>
+	#searchYear{
+		cursor: pointer;
+	}
+</style>
+<div id="searchBlock">
+    <form id="searchForm" class="form-horizontal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="searchYear" class="control-label col-md-4">查询年份：</label>
+                        <div class="col-md-8">
+                            <input id="searchYear" name="searchYear" type="text" class="form-control" readonly/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="name" class="control-label col-md-4">领导名称：</label>
+                        <div class="col-md-8">
+                            <input id="name" name="name" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="className" class="control-label col-md-4">班级名称：</label>
+                        <div class="col-md-8">
+                            <input id="className" name="className" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-5">
+                    <button id="searchBtn" type="button" class="btn btn-default">
+                        <i class="fa fa-search"></i>&nbsp;查询
+                    </button>
+                    <button id="resetBtn" type="button" class="btn btn-default">
+                        <i class="fa fa-refresh"></i>&nbsp;重置
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </form>
+</div>
+
+<div id="leaderOpinionGrid">
+
+</div>

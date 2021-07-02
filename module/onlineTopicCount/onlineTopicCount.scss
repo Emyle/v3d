@@ -1,0 +1,42 @@
+.onlineTopicCount{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  .onlineTopicCount-Chart{
+    margin: 0 auto;
+    width: 70%;
+    height: 60%;
+  }
+  .onlineTopicCount-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .onlineTopicCount-lengend{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .onlineTopicCount-box{
+        width: 15px;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        &.red{
+          background-color: #66B5C9;
+        }
+        &.blue{
+          background-color: #066E89;
+        }
+        &.yellow{
+          background-color: #F3FD1C;
+        }
+        &.green{
+          background-color: #F7C779;
+        }
+      }
+      .onlineTopicCount-number{
+        color: #000;
+      }
+    }
+  }
+}

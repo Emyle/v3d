@@ -1,0 +1,12 @@
+.listSpecialTrainAdjustification{
+  text-align: center;
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .visual-small-Chart{
+      width: 22%;
+      height: 50px;
+    }
+  }
+}

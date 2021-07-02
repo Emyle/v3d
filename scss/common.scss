@@ -1,0 +1,145 @@
+/* 系统样式 */
+// 平台，强制满屏
+html, body, .body-wrap{
+  width: 100%;
+  height: 100%;
+}
+
+/* 栅格系统 */
+.width25{
+  width: 25%;
+}
+
+.width30{
+  width: 30%;
+}
+
+.width33{
+  width: 33.33%;
+}
+
+.width40{
+  width: 40%;
+}
+
+.width50{
+  width: 50%;
+}
+
+.width100{
+  width: 100%;
+}
+
+.height25{
+  height: 25%;
+}
+
+.height33{
+  height: 33%;
+}
+
+.height50{
+  height: 50%;
+}
+
+.height75{
+  height: 75%;
+}
+
+.height100{
+  height: 100%;
+}
+
+/* 大屏公共样式 */
+.visual-flexrow{
+  display: flex;
+  flex-direction: row;
+}
+
+.visual-flexcolumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-hidden{
+  overflow: hidden;
+}
+
+.visual-title{
+  &.scifi{
+    color: $titleColor;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .visual-title-left{
+      width: 58px;
+      height: 26px;
+      background: url(../asset/images/titleLeftBg.png);
+      background-size: 100% 100%;
+      background-position: center center;
+    }
+    .visual-title-middle{
+      background: url(../asset/images/titleMiddleBg.png);
+      background-size: 100% 100%;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      color: #00fefb;
+      opacity: 70%;
+    }
+    .visual-title-right{
+      width: 58px;
+      height: 26px;
+      background: url(../asset/images/titleRightBg.png);
+      background-size: 100% 100%;
+      background-position: center center;
+    }
+  }
+
+  &.flat{
+    color: $titleColorPc;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .visual-title-inner{
+      width: 95%;
+      border-bottom: 1px solid #eee;
+      padding: 10px 10px 10px 0px;
+      font-weight: bolder;
+    }
+  }
+
+  &.scifiClean{
+    color: $titleColorPc;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .visual-title-inner{
+      padding: 10px 10px;
+      color: #00fefb;
+      opacity: 70%;
+    }
+  }
+
+  &.flatClean{
+    color: $titleColorPc;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .visual-title-inner{
+      padding: 10px 10px;
+      font-weight: bolder;
+    }
+  }
+}
+
+.visual-number{
+	color: $titleColor;
+	font-size: 0.175rem;;
+}

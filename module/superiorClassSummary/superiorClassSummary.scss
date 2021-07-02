@@ -1,0 +1,39 @@
+.superiorClassSummary {
+    text-align: center;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        .ajustification {
+            width: 45%;
+        }
+        .legend-container {
+            width: 10%;
+            padding-top: 15px;
+            .legend {
+                margin-bottom: 10px;
+                .icon{
+                    width: 20px;
+                    height: 15px;
+                    margin: 5px auto;
+                }
+            }
+            .central {
+                .icon {
+                    background: #389FFD;
+                }
+            }
+            .province {
+                .icon {
+                    background: #55D0D0;
+                }
+            }
+            
+        }
+        .completion {
+            width: 45%;
+        }
+        .echart-container {
+            height: 120px;
+        }
+    }
+}

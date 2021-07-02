@@ -1,0 +1,8 @@
+{
+    "model":[
+        {"year": "2021", "divisionStudCount": 30, "divisionAvgHours": 20, "sectionStudCount": 30, "sectionAvgHours": 20},
+        {"year": "2020", "divisionStudCount": 30, "divisionAvgHours": 20, "sectionStudCount": 30, "sectionAvgHours": 20},
+        {"year": "2019", "divisionStudCount": 30, "divisionAvgHours": 20, "sectionStudCount": 30, "sectionAvgHours": 20},
+        {"year": "2018", "divisionStudCount": 30, "divisionAvgHours": 20, "sectionStudCount": 30, "sectionAvgHours": 20}
+    ]
+}

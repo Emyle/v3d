@@ -1,0 +1,8 @@
+{
+    "model": [
+        {"year": "2021", "value": 800, "total": 850},
+        {"year": "2020", "value": 700, "total": 800},
+        {"year": "2019", "value": 850, "total": 851},
+        {"year": "2018", "value": 830, "total": 850}
+    ]
+}

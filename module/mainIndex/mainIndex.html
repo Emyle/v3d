@@ -1,0 +1,43 @@
+<section class="width100 height100 visual-module" id="module-8">
+  <div class="mainIndex">
+    <div class="height100" style="width: 28%">
+      <div class="width100 height50 visual-mainIndex-round" id="visual-mainIndex-round1">
+        <div class="visual-mainIndex-roundImage" :class="blueStyle">
+          <div class="visual-mainIndex-number" :style="{color: indexColor}">{{thoryTrainProcessPercentComputed}}%</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">理论和党性</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">教育进度</div>
+        </div>
+      </div>
+      <div class="width100 height50 visual-mainIndex-round" id="visual-mainIndex-round2">
+        <div class="visual-mainIndex-roundImage" :class="blueStyle">
+          <div class="visual-mainIndex-number" :style="{color: indexColor}">{{orgTrainProcessPercentComputed}}%</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">各单位</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">调训进度</div>
+        </div>
+      </div>
+    </div>
+    <div class="height100 visual-flexcolumn visual-trainCompletion-wrapper" style="width: 44%">
+      <div v-html="titleHtml" class="visual-title">
+      </div>
+      <div class="visual-trainCompletion-index" id="visual-trainCompletion-index" :style="{color: indexColor}">指标说明</div>
+      <div class="visual-trainCompletion-panel width100 height50" id="visual-trainCompletion"></div>
+      <div class="visual-trainCompletion-des" :style="{color: desColor}">脱产培训学时进度</div>
+    </div>
+    <div class="height100" style="width: 28%">
+      <div class="width100 height50 visual-mainIndex-round" id="visual-mainIndex-round3">
+        <div class="visual-mainIndex-roundImage" :class="blueStyle">
+          <div class="visual-mainIndex-number" :style="{color: indexColor}">{{specialTrainProcessPercentComputed}}%</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">专业化能力</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">培训进度</div>
+        </div>
+      </div>
+      <div class="width100 height50 visual-mainIndex-round" id="visual-mainIndex-round4">
+        <div class="visual-mainIndex-roundImage" :class="warnStyle">
+          <div class="visual-mainIndex-number" :style="{color: indexColor}">{{divisionWarningSum}}</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">县处级干部</div>
+          <div class="visual-mainIndex-roundTitle" :style="{color: desColor}">培训预警</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

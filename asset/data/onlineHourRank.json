@@ -1,0 +1,10 @@
+{
+    "model": {
+    	"countryTrainingNum": 100,
+    	"provinceTrainingNum": 200,
+    	"countryClassNum": 20,
+    	"planCountryClassNum": 25,
+    	"provinceClassNum": 26,
+    	"planProvinceClassNum": 40
+    }
+}

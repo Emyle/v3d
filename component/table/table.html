@@ -1,0 +1,24 @@
+<div class="visual-table">
+	<div class="tbl-header">
+		<div class="tr" :style="{backgroundColor: headBgColor, fontSize: headFontSize, color:headColor, textAlign: headTextAlign, height:headRowHeight, lineHeight: headRowHeight}">
+			<div v-for="(td , index) in layout" class="td" 
+				:style="{textAlign: td.headTextAlign, width: td.width}">
+				{{td.name}}
+		    </div>
+       </div>
+   </div>
+   <div class="tbl-body">
+		<div :class="{'visual-marquee':marquee}">
+			<div v-for="(item, index) in data" class="tr" 
+				:style="{fontSize: bodyFontSize, color:bodyColor, textAlign: bodyTextAlign, height:bodyRowHeight, lineHeight: bodyRowHeight, cursor: rowClick? 'pointer': 'auto'}"
+				@click="rowClick && rowClick(item, index)">
+				<div v-for="td in layout" class="td" 
+					:style="{textAlign: td.bodyTextAlign, width: td.width, cursor: td.click? 'pointer': 'auto'}"
+					@click="td.click && td.click(item, index)">
+					<span v-if="item[td.field] == null">--</span>
+					<span :title="td.format? td.format(item, index) : item[td.field]" v-else >{{td.format? td.format(item, index) : item[td.field]}}</span>
+		    	</div>
+		    </div>
+		</div>
+   </div>
+</div>

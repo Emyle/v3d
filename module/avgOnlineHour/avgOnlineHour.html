@@ -1,0 +1,20 @@
+<div class="visual-module" id="section-16">
+	<div class="avgOnlineHour">
+		<div class="visual-title">各级干部人均网络学时</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in data" class="item">
+				<div class="legend-container division">
+					<div class="icon" v-bind:style="{color: divisionColor}"></div>
+					<div class="text">处级{{item.divisionStudent}}</div>
+				</div>
+				<div class="echart-container" :ref="'avgOnlineHour' + index">
+				</div>
+				<div class="legend-container section">
+					<div class="icon" v-bind:style="{color: sectionColor}"></div>
+					<div class="text">科级{{item.sectionStudent}}</div>
+				</div>
+				<div class="item-title visual-number">{{item.year}}</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+.modal-dialog {
+  color: #333333; }
+
+.modal-footer {
+  display: none; }
+
+.modal-backdrop.in {
+  opacity: .4; }

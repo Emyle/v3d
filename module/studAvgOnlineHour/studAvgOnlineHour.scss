@@ -1,0 +1,92 @@
+.studAvgOnlineHour{
+  height: 100%;
+  .visual-studAvgOnlineHour-wrapper-scifi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%;
+    .visual-studAvgOnlineHour-box{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .visual-studAvgOnlineHour-number{
+        color: #ecc95f;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .visual-studAvgOnlineHour-bg{
+        background: url(../asset/images/lineBg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100px;
+        height: 10px;
+        margin-bottom: 5px;
+      }
+      .visual-studAvgOnlineHour-title{
+        color: #aaddff;
+        margin-top: 10px;
+      }
+    }
+  }
+  .visual-studAvgOnlineHour-wrapper-flat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    .visual-studAvgOnlineHour-box{
+      width: 70%;
+      height: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(244, 247, 253);
+      border-radius: 10px;
+      .visual-studAvgOnlineHour-box-left{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefef;
+        border-radius: 15px;
+        .visual-studAvgOnlineHour-iconBlue{
+          background: url(../asset/images/avatarBgBlue.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 15px;
+          height: 15px;
+        }
+        .visual-studAvgOnlineHour-iconYellow{
+          background: url(../asset/images/avatarBgYellow.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .visual-studAvgOnlineHour-box-right{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .visual-studAvgOnlineHour-number{
+          color: #3753d2;
+          font-size: 10px;
+          cursor: pointer;
+        }
+        .visual-studAvgOnlineHour-title{
+          color: #42526e;
+          font-size: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

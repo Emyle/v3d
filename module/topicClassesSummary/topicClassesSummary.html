@@ -1,0 +1,24 @@
+<div class="visual-module" id="section-17">
+	<div class="topicClassesSummary">
+		<div class="visual-title">当年网上专题研讨班概况</div>
+		<div class ="wrapper">
+			<div class="width50 height100 class-count">
+				<div class="text-container">
+					<div class="text">培训班次</div>
+				</div>
+				<div class="value-container" :ref="'topicClassesSummaryCount'">
+					<div class="value-bg" v-bind:style="style">{{classNum}}</div>
+				</div>
+			</div>
+			<div class="width50 height100 stud-AFD">
+				<div v-for="(item , index) in AFD" class="AFD division">
+					<div class="echart-container" :ref="'topicClassesSummary' + index">
+					</div>
+					<div class="text-container">
+						<div class="text">{{item.title}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

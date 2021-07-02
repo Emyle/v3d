@@ -1,0 +1,13 @@
+<div id="offlineTrainSummary">
+    <!-- 模板 -->
+    <script id="T_OfflineTrainSummary" type="text/html">
+        <%for(var i=0,item;item=data[i++];){%>
+        <fieldset class="pd-fieldset" style="padding-bottom: 10px;">
+            <legend data-toggle="collapse" data-target="#collapse_<%=item.year %>" aria-expanded="<%if(i==1){%>true<%}else{%>false<%}%>" aria-controls="collapse_<%=item.year %>"><%=item.year %>年计划开班总数<%=item.planClassCount %>个</legend>
+            <div id="collapse_<%=item.year%>" class="collapse <%if(i==1){%> in <%}%>">
+                <div id="grid_<%=item.year%>"></div>
+            </div>
+        </fieldset>
+        <%}%>
+    </script>
+</div>

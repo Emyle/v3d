@@ -1,0 +1,41 @@
+<div class="width100 height100 visual-module" id="module-1">
+	<div class="offlineTrainSummary">
+		<div v-html="titleHtml" class="visual-title">
+		</div>
+		<div class="offlineTrainSummary-wrapper">
+			<div class="visual-flexcolumn">
+				<div class="visual-flexrow visual-offline-legend">
+					<div class="visual-offline-column"></div>
+					<div class="visual-offline-column">
+						<div class="visual-legend" :style="{ backgroundColor: provinceColor }"></div>
+						<div class="visual-offline-title" :style="{ color: contentTitleColor }">省管干部</div>
+					</div>
+					<div class="visual-offline-column">
+						<div class="visual-legend" :style="{ backgroundColor: cityColor }"></div>
+						<div class="visual-offline-title" :style="{ color: contentTitleColor }">市管干部</div>
+					</div>
+					<div class="visual-offline-column">
+						<div class="visual-legend" :style="{ backgroundColor: sectionColor }"></div>
+						<div class="visual-offline-title" :style="{ color: contentTitleColor }">科级干部</div>
+					</div>
+				</div>
+				<div class="visual-flexrow visual-offline-data">
+					<div class="visual-offline-column" :style="{ color: contentTitleColor }">今年调训干部数</div>
+					<div class="visual-offline-column" :style="{ color: contentTitleColor }">{{sumCountProvice}}人次</div>
+					<div class="visual-offline-column" :style="{ color: contentTitleColor }">{{sumCountCity}}人次</div>
+					<div class="visual-offline-column" :style="{ color: contentTitleColor }">{{sumCountSection}}人次</div>
+				</div>
+				<div class="visual-flexrow visual-offline-data">
+					<div class="visual-offline-column" :style="{ color: contentTitleColor }">今年组建班级数</div>
+					<div class="width50" :style="{ color: contentTitleColor }">计划主办主体班次{{planClassCount}}期，已办{{classCountSum}}期。</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div id="module-1-1"></div>
+				<div id="module-1-2"></div>
+				<div id="module-1-3"></div>
+				<div id="module-1-4"></div>
+			</div>
+		</div>
+	</div>
+</div>

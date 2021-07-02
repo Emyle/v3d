@@ -1,0 +1,11 @@
+<div class="visual-module" id="section-1">
+	<div class="listTheoryTrainAjustification">
+		<div class="visual-title">党政班子理论党性教育调训率</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in chartIndex" class="visual-small-Chart" :ref="'listTheoryTrainAjustification' + item"></div>
+		</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in ajustificationData" class="visual-number">{{item.year}}</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+.onlineTrainACH{
+  height: 100%;
+  .visual-onlineTrainACH-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    .visual-onlineTrainACH-progress{
+      height: 50px;
+    }
+  }
+}

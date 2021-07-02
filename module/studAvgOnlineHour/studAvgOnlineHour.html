@@ -1,0 +1,38 @@
+<section class="width50 height100 visual-module" id="module-9">
+  <div class="studAvgOnlineHour">
+    <div v-html="titleHtml" class="visual-title">
+    </div>
+    <div v-if="type == 'scifi'" class="visual-studAvgOnlineHour-wrapper-scifi">
+      <div class="visual-studAvgOnlineHour-box">
+        <div class="visual-studAvgOnlineHour-number">{{divisionAvgHours}}</div>
+        <div class="visual-studAvgOnlineHour-bg"></div>
+        <div class="visual-studAvgOnlineHour-title">县处级干部</div>
+      </div>
+      <div class="visual-studAvgOnlineHour-box">
+        <div class="visual-studAvgOnlineHour-number">{{sectionAvgHours}}</div>
+        <div class="visual-studAvgOnlineHour-bg"></div>
+        <div class="visual-studAvgOnlineHour-title">乡科级干部</div>
+      </div>
+    </div>
+    <div v-else class="visual-studAvgOnlineHour-wrapper-flat">
+      <div class="visual-studAvgOnlineHour-box">
+        <div class="visual-studAvgOnlineHour-box-left">
+          <div class="visual-studAvgOnlineHour-iconBlue"></div>
+        </div>
+        <div class="visual-studAvgOnlineHour-box-right">
+          <div class="visual-studAvgOnlineHour-number">{{divisionAvgHours}}</div>
+          <div class="visual-studAvgOnlineHour-title">县处级干部</div>
+        </div>
+      </div>
+      <div class="visual-studAvgOnlineHour-box">
+        <div class="visual-studAvgOnlineHour-box-left">
+          <div class="visual-studAvgOnlineHour-iconYellow"></div>
+        </div>
+        <div class="visual-studAvgOnlineHour-box-right">
+          <div class="visual-studAvgOnlineHour-number">{{sectionAvgHours}}</div>
+          <div class="visual-studAvgOnlineHour-title">乡科级干部</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

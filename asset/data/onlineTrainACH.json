@@ -1,0 +1,8 @@
+{
+    "model":[
+        {"year": "2021", "divisionPass": 20, "divisionTotal": 30, "sectionPass": 20, "sectionTotal": 30},
+        {"year": "2020", "divisionPass": 20, "divisionTotal": 30, "sectionPass": 20, "sectionTotal": 30},
+        {"year": "2019", "divisionPass": 20, "divisionTotal": 30, "sectionPass": 20, "sectionTotal": 30},
+        {"year": "2018", "divisionPass": 20, "divisionTotal": 30, "sectionPass": 20, "sectionTotal": 30}
+    ]
+}

@@ -1,0 +1,17 @@
+<div id="section-3" class="visual-module">
+	<div class="avgOfflineHour">
+		<div class="visual-title">党政班子人均脱产学时</div>
+		<div class="wrapper">
+			<div v-for="(item, index) in avg" class="visual-avgCaculation">
+				<div class="avgOfflineHour-year">{{item.year}}</div>
+				<div class="avgOfflineHour-calculate">
+					<div>{{item.classHour}}</div>
+					<div class="avgOfflineHour-line"></div>
+					<div>{{item.studentCount}}</div>
+				</div>
+				<div class="avgOfflineHour-equal">=</div>
+				<div class="avgOfflineHour-result visual-red">{{item.result}}</div>
+			</div>
+		</div>
+	</div>
+</div>

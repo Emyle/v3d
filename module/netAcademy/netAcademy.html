@@ -1,0 +1,15 @@
+<div id="section-15">
+	<div class="netAcademy">
+		<div class="wrapper">
+			<div class="city-academy">
+				<div class="academy-name">市级网院</div>
+			</div>
+			<div class="branch-academy">
+				<div v-for="(item , index) in data" v-bind:data-code="item.code" class="item">
+					{{item.name}}
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

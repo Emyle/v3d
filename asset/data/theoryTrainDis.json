@@ -1,0 +1,8 @@
+{
+    "model":[
+        {"name": "上级选调", "code": "1","value": 30},
+        {"name": "选修班", "code": "2","value": 70},
+        {"name": "中青班", "code": "3","value": 90},
+        {"name": "轮训班", "code": "4","value": 10}
+    ]
+}

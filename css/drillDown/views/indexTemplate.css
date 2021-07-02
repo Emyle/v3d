@@ -1,0 +1,37 @@
+.item-list {
+  padding: 0 10px; }
+  .item-list .item {
+    padding-top: 32px;
+    position: relative; }
+    .item-list .item .diamond {
+      background: url(../../../asset/images/diamond.png) center no-repeat;
+      background-size: contain;
+      height: 100px;
+      width: 100px;
+      position: relative;
+      display: inline-block; }
+      .item-list .item .diamond .square {
+        background-color: #0c7cd5;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        border-radius: 6px; }
+        .item-list .item .diamond .square .value {
+          color: #ffffff;
+          line-height: 60px; }
+    .item-list .item .title {
+      display: inline-block;
+      position: absolute;
+      height: 100px;
+      line-height: 100px;
+      left: 105px; }
+      .item-list .item .title span {
+        display: inline-block;
+        line-height: 19px;
+        vertical-align: middle; }

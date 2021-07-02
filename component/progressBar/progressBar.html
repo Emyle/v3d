@@ -1,0 +1,23 @@
+<div class="visual-progressBar" :id="id">
+  <div class="visual-progressBar-title" :style="{ color: titleColor}">{{titleName}}</div>
+  <div class="visual-progressBar-background" :style="{ borderRadius: borderRadius + 'px', height: backgroundHeight + 'px', backgroundColor: backgroundColor}">
+    <div class="visual-progressBar-value-container" v-if="type == 'single'">
+      <div class="visual-progressBar-value" :style="{ minWidth: '7%', textAlign: 'center', borderRadius: borderRadius + 'px ' + 0 + 'px ' + 0 + 'px ' + borderRadius + 'px ', width: percentComputed + '%' , backgroundColor: barColor, color: numberColor, height: barHeight + 'px', lineHeight: barHeight + 'px'}">
+       <span v-if="showBarValue == 'true'">{{value}}</span>
+      </div>
+      <div v-if="contrast == 'on'" class="visual-progressBar-contrast" :style="{ textAlign: 'center', borderRadius: 0 + 'px ' + borderRadius + 'px ' + borderRadius + 'px ' + 0 + 'px ', height: barHeight + 'px', lineHeight: barHeight + 'px', backgroundColor: contrastColor, color: numberColor, width: contrastPercent + '%' }">
+        <span v-if="showBarValue == 'true'">{{maxValue - value}}</span>
+      </div>
+    </div>
+    <div class="visual-progressBar-tip" v-if="type == 'single'" :style="{ position: 'absolute' , right: 10 + 'px' , top: '-' + tipShift + 'px'}">
+      <span :style="{ color: tipColor }" v-if="tipType == 'value'">今年已增{{maxValue - value}}</span>
+      <span :style="{ color: tipColor }" v-if="tipType == 'percent'">{{ percentComputed }}%</span>
+    </div>
+    <div class="visual-progressBar-value-container" v-if="type == 'multiple'">
+      <div v-for="item in percents" class="visual-progressBar-value" :style="{ minWidth: '7%', textAlign: 'center', borderRadius: borderRadius + 'px', width: item.percent , backgroundColor: item.color, color: numberColor, height: barHeight + 'px', lineHeight: barHeight + 'px'}">
+        <span v-if="showBarValue == 'true'">{{item.value}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="visual-progressBar-max" :style="{ color: titleColor}">共{{ maxValue }}</div>
+</div>

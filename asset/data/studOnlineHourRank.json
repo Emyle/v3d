@@ -1,0 +1,19 @@
+{
+    "model": {
+    	"student": [
+    		{"name": "巧慧", "value": 100},
+    		{"name": "巧慧", "value": 100},
+    		{"name": "巧慧", "value": 100}
+    	],
+    	"city": [
+    		{"name": "市委组织部", "value": 100},
+    		{"name": "市委组织部", "value": 100},
+    		{"name": "市委组织部", "value": 100}
+    	],
+    	"county": [
+    		{"name": "柯桥", "value": 100},
+    		{"name": "柯桥", "value": 100},
+    		{"name": "柯桥", "value": 100}
+    	]
+    }
+}

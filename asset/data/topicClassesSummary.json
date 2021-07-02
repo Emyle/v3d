@@ -1,0 +1,11 @@
+{
+    "model":{
+        "classNum": 12,
+        "chuTrainingNum": 35,
+        "chuPassNum": 35,
+        "chuTotalNum": 50,
+        "keTrainingNum": 35,
+        "kePassNum": 60,
+        "keTotalNum": 100
+    }
+}

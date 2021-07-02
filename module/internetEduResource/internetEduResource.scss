@@ -1,0 +1,12 @@
+.internetEduResource{
+  height: 100%;
+  .visual-internetEduResource-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    .visual-internetEduResource-progress{
+      height: 50px;
+    }
+  }
+}

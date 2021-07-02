@@ -1,0 +1,220 @@
+@import '../../scss/variables.scss';
+
+html, body, .body-wrap{
+  background: url(../../asset/images/bg.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+
+  .visual-screen-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px 10px 10px;
+
+    .visual-module{
+      border: 1px solid $borderColor;
+    }
+    
+    .visual-top{
+      background: url(../../asset/images/bannerBg.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      height: 8%;
+      margin-bottom: 10px;
+      .digital-title{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .visual-title-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a{
+            color: $mainBlue;
+            font-size: 34px;
+            letter-spacing: 10px;
+            font-weight: bolder;
+            text-decoration: none;
+          }
+          .visual-line{
+            width: 180px;
+            height: 2px;
+            border: 2px solid #fff;
+            background-color: #fff;
+            margin-top: 10px;
+          }
+        }
+        .visual-datetime{
+          font-size: 20px;
+          color: $mainBlue;
+          position: absolute;
+          left: 30px;
+        }
+        .visual-zoneSelect{
+          font-size: 20px;
+          color: $mainBlue;
+          position: absolute;
+          right: 30px;
+        }
+      }
+    }
+    .visual-content{
+      width: 100%;
+      height: 92%;
+      display: flex;
+      .visual-left{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .visual-left-top{
+          padding: $borderPadding;
+          width: 100%;
+          height: 40%;
+          display: flex;
+          flex-direction:row;
+        }
+        .visual-left-middle{
+          padding: $borderPadding;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction:row;
+          // padding: 20px;
+        }
+        .visual-left-bottom{
+          padding: $borderPadding;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction:row;
+          // padding: 20px;
+        }
+      }
+      .visual-middle{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .visual-middle-top {
+          padding: $borderPadding;
+          width: 100%;
+          height: 25%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          position: relative;
+          .visual-left-top-border{
+            background: url(../../asset/images/leftTop.png);
+            width: 92px;
+            height: 31px;
+            position: absolute;
+            left: 0px;
+            top: -8px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+          
+          .visual-right-top-border{
+            background: url(../../asset/images/rightTop.png);
+            width: 92px;
+            height: 31px;
+            position: absolute;
+            right: 0px;
+            top: -8px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+
+          .visual-left-bottom-border{
+            background: url(../../asset/images/leftBottom.png);
+            width: 92px;
+            height: 31px;
+            position: absolute;
+            left: 0px;
+            bottom: -8px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+
+          .visual-right-bottom-border{
+            background: url(../../asset/images/rightBottom.png);
+            width: 92px;
+            height: 31px;
+            position: absolute;
+            right: 0px;
+            bottom: -8px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+
+          .visual-margin-top-border{
+            background: url(../../asset/images/marginTop.png);
+            width: 97%;
+            height: 10px;
+            position: absolute;
+            top: 2px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+
+          .visual-margin-bottom-border{
+            background: url(../../asset/images/marginBottom.png);
+            width: 97%;
+            height: 10px;
+            position: absolute;
+            bottom: 2px;
+            background-size: 100% 100%;
+            opacity: 0.8;
+          }
+        }
+        .visual-middle-middle {
+          padding: $borderPadding;
+          width: 100%;
+          height: 35%;
+          .visual-middle-middle-top{
+            padding-bottom: 20px; // temp
+          }
+        }
+        .visual-middle-bottom {
+          padding: $borderPadding;
+          width: 100%;
+          height: 40%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      .visual-right{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .visual-right-top {
+          padding: $borderPadding;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .visual-right-middle {
+          padding: $borderPadding;
+          width: 100%;
+          height: 30%;
+        }
+        .visual-right-bottom {
+          padding: $borderPadding;
+          width: 100%;
+          height: 40%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  
+  }
+}
+

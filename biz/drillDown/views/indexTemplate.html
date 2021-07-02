@@ -1,0 +1,23 @@
+<div id="indexTemplate" class="row item-list">
+
+    <!-- 模板 -->
+    <script id="T_Index" type="text/html">
+
+        <%for(var i=0,item;item=data[i++];){%>
+
+
+        <div class="col-md-4">
+            <div class="item">
+                <div class="diamond">
+                    <div class="square">
+                        <span class="value"><%=item.value%></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span><%=item.name%></span>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </script>
+</div>

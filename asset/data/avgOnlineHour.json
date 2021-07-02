@@ -1,0 +1,7 @@
+{
+    "model": [
+        {"year": 2021, "divisionCount": 50, "divisionHours": 300, "sectionHours": 50, "sectionCount": 4},
+        {"year": 2020, "divisionCount": 50, "divisionHours": 300, "sectionHours": 50, "sectionCount": 4},
+        {"year": 2019, "divisionCount": 50, "divisionHours": 300, "sectionHours": 50, "sectionCount": 4}
+    ]
+}

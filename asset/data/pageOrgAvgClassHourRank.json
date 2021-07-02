@@ -1,0 +1,24 @@
+{
+    "model":{
+        "allDataCount": 100,
+        "curPageData": [
+            {
+                "id": "1",
+                "name": "市政协", 
+                "divisionStudCount": 20, 
+                "sectionStudCount": 20, 
+                "divisionAvgHours": 20, 
+                "sectionAvgHours": 20
+            },
+            {
+                "id": "1",
+                "name": "市政协", 
+                "divisionStudCount": 20, 
+                "sectionStudCount": 20, 
+                "divisionAvgHours": 20, 
+                "sectionAvgHours": 20
+            }
+
+        ]
+    }
+}

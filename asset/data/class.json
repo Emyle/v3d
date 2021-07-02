@@ -1,0 +1,22 @@
+{
+    "model":{
+        "allDataCount": 100,
+        "curPageData": [
+            {
+                "id": "1",
+                "year": "2021",
+                "name": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01", 
+                "classNature": "脱产班",
+                "schedule": "有",
+                "TPS": "xxx",
+                "assess": "xxxx",
+                "achievement": "xxx",
+                "opinion": "有", 
+                "state": "准备中"
+            }
+
+        ]
+    }
+}

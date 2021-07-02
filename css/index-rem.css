@@ -1,0 +1,1102 @@
+@charset "UTF-8";
+/* 公共  */
+/* 系统样式 */
+html, body, .body-wrap {
+  width: 100%;
+  height: 100%; }
+
+/* 栅格系统 */
+.width25 {
+  width: 25%; }
+
+.width30 {
+  width: 30%; }
+
+.width33 {
+  width: 33.33%; }
+
+.width40 {
+  width: 40%; }
+
+.width50 {
+  width: 50%; }
+
+.width100 {
+  width: 100%; }
+
+.height25 {
+  height: 25%; }
+
+.height33 {
+  height: 33%; }
+
+.height50 {
+  height: 50%; }
+
+.height75 {
+  height: 75%; }
+
+.height100 {
+  height: 100%; }
+
+/* 大屏公共样式 */
+.visual-flexrow {
+  display: flex;
+  flex-direction: row; }
+
+.visual-flexcolumn {
+  display: flex;
+  flex-direction: column; }
+
+.visual-hidden {
+  overflow: hidden; }
+
+.visual-title.scifi {
+  color: #8a8a8a;
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 10px 0px 0px 0px;
+  margin: 0.625rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .visual-title.scifi .visual-title-left {
+    width: 58px;
+    height: 26px;
+    background: url(../asset/images/titleLeftBg.png);
+    background-size: 100% 100%;
+    background-position: center center; }
+  .visual-title.scifi .visual-title-middle {
+    background: url(../asset/images/titleMiddleBg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    color: #00fefb;
+    opacity: 70%; }
+  .visual-title.scifi .visual-title-right {
+    width: 58px;
+    height: 26px;
+    background: url(../asset/images/titleRightBg.png);
+    background-size: 100% 100%;
+    background-position: center center; }
+
+.visual-title.flat {
+  color: #232c3b;
+  font-size: 16px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .visual-title.flat .visual-title-inner {
+    width: 95%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px 10px 0px;
+    padding: 0.625rem 0.625rem 0.625rem 0;
+    font-weight: bolder; }
+
+.visual-title.scifiClean {
+  color: #232c3b;
+  font-size: 16px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .visual-title.scifiClean .visual-title-inner {
+    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
+    color: #00fefb;
+    opacity: 70%; }
+
+.visual-title.flatClean {
+  color: #232c3b;
+  font-size: 16px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .visual-title.flatClean .visual-title-inner {
+    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
+    font-weight: bolder; }
+
+.visual-number {
+  color: #8a8a8a;
+  font-size: 0.175rem; }
+
+/* component */
+.visual-progressBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer; }
+  .visual-progressBar .visual-progressBar-title {
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .visual-progressBar .visual-progressBar-background {
+    width: 60%;
+    padding: 0px 10px;
+    padding: 0 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative; }
+    .visual-progressBar .visual-progressBar-background .visual-progressBar-value-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .visual-progressBar .visual-progressBar-background .visual-progressBar-value-container .visual-progressBar-value {
+        margin: 0px 2px;
+        margin: 0 0.125rem; }
+  .visual-progressBar .visual-progressBar-max {
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    font-size: 0.875rem; }
+
+.visual-proportion {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .visual-proportion .proportion-progress {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 40px;
+    max-height: 100%; }
+    .visual-proportion .proportion-progress .text {
+      width: 100%;
+      word-wrap: break-word;
+      text-align: center;
+      padding: 0px 5px;
+      padding: 0 0.3125rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.visual-warning {
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.25rem; }
+
+.visual-warning.visual-warning-red {
+  background: -webkit-radial-gradient(#ca5559 50%, #ffffff 80%, transparent);
+  background: -moz-radial-gradient(#ca5559 50%, #ffffff 80%, transparent);
+  background: -o-radial-gradient(#ca5559 50%, #ffffff 80%, transparent);
+  background: radial-gradient(#ca5559 50%, #ffffff 80%, transparent); }
+
+.visual-warning.visual-warning-yellow {
+  background: -webkit-radial-gradient(#F6D061 50%, #ffffff 80%, transparent);
+  background: -moz-radial-gradient(#F6D061 50%, #ffffff 80%, transparent);
+  background: -o-radial-gradient(#F6D061 50%, #ffffff 80%, transparent);
+  background: radial-gradient(#F6D061 50%, #ffffff 80%, transparent); }
+
+.visual-warning.visual-warning-blue {
+  background: -webkit-radial-gradient(#4D7CFE 50%, #ffffff 80%, transparent);
+  background: -moz-radial-gradient(#4D7CFE 50%, #ffffff 80%, transparent);
+  background: -o-radial-gradient(#4D7CFE 50%, #ffffff 80%, transparent);
+  background: radial-gradient(#4D7CFE 50%, #ffffff 80%, transparent); }
+
+.visual-warning.visual-warning-green {
+  background: -webkit-radial-gradient(#69F88E 50%, #ffffff 80%, transparent);
+  background: -moz-radial-gradient(#69F88E 50%, #ffffff 80%, transparent);
+  background: -o-radial-gradient(#69F88E 50%, #ffffff 80%, transparent);
+  background: radial-gradient(#69F88E 50%, #ffffff 80%, transparent); }
+
+.visual-table {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  overflow: hidden; }
+  .visual-table .tr {
+    display: flex;
+    flex-direction: row; }
+    .visual-table .tr .td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0px 5px;
+      padding: 0 0.3125rem; }
+  .visual-table .tbl-header {
+    width: 100%; }
+  .visual-table .tbl-body {
+    overflow: hidden; }
+    .visual-table .tbl-body .visual-marquee {
+      animation: visual-table-row  10s linear infinite; }
+    .visual-table .tbl-body .visual-marquee:hover {
+      animation-play-state: paused; }
+
+@keyframes visual-table-row {
+  0% { }
+  100% {
+    transform: translateY(-50%); } }
+
+/* module */
+.listSpecialTrainAdjustification {
+  text-align: center; }
+  .listSpecialTrainAdjustification .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .listSpecialTrainAdjustification .wrapper .visual-small-Chart {
+      width: 22%;
+      height: 50px; }
+
+.listTheoryTrainAjustification {
+  text-align: center; }
+  .listTheoryTrainAjustification .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .listTheoryTrainAjustification .wrapper .visual-small-Chart {
+      width: 22%;
+      height: 50px; }
+
+.avgOfflineHour {
+  text-align: center;
+  height: 100%; }
+  .avgOfflineHour .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%; }
+    .avgOfflineHour .wrapper .visual-avgCaculation {
+      width: 80%;
+      height: 33%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-year {
+        display: flex;
+        align-items: center; }
+      .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-calculate {
+        display: flex;
+        flex-direction: column; }
+        .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-calculate .avgOfflineHour-line {
+          border-top: 1px solid #000;
+          width: 40px;
+          margin: 5px 0px;
+          margin: 0.3125rem 0;
+          background-color: #000; }
+      .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-equal {
+        display: flex;
+        align-items: center; }
+      .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-result {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        border-radius: 15px; }
+        .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-result.visual-red {
+          background-color: #ca5559; }
+        .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-result.visual-green {
+          background-color: green; }
+        .avgOfflineHour .wrapper .visual-avgCaculation .avgOfflineHour-result.visual-blue {
+          background-color: #4D7CFE; }
+
+.classACH {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .classACH .ACH-Chart {
+    margin: 0 auto;
+    width: 60%;
+    height: 60%; }
+
+.studAFD {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .studAFD .studAFD-Chart {
+    margin: 0 auto;
+    width: 60%;
+    height: 60%; }
+
+.classCount {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .classCount .classCount-Chart {
+    margin: 0 auto;
+    width: 100%;
+    height: 65%; }
+  .classCount .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-top: 0.625rem; }
+
+.groupWarningData {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .groupWarningData .groupWarningData-Warn {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%; }
+
+.divisionWarningData {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .divisionWarningData .divisionWarningData-Warn {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%; }
+
+.onlineCourseWareCount {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .onlineCourseWareCount .onlineCourseWareCount-Chart {
+    margin: 0 auto;
+    width: 70%;
+    height: 60%; }
+  .onlineCourseWareCount .onlineCourseWareCount-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-box {
+        width: 15px;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
+        margin-top: 5px;
+        margin-top: 0.3125rem; }
+        .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-box.red {
+          background-color: #66B5C9; }
+        .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-box.blue {
+          background-color: #066E89; }
+        .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-box.yellow {
+          background-color: #F3FD1C; }
+        .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-box.green {
+          background-color: #F7C779; }
+      .onlineCourseWareCount .onlineCourseWareCount-wrapper .onlineCourseWareCount-lengend .onlineCourseWareCount-number {
+        color: #000; }
+
+.onlineTopicCount {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .onlineTopicCount .onlineTopicCount-Chart {
+    margin: 0 auto;
+    width: 70%;
+    height: 60%; }
+  .onlineTopicCount .onlineTopicCount-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-box {
+        width: 15px;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
+        margin-top: 5px;
+        margin-top: 0.3125rem; }
+        .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-box.red {
+          background-color: #66B5C9; }
+        .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-box.blue {
+          background-color: #066E89; }
+        .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-box.yellow {
+          background-color: #F3FD1C; }
+        .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-box.green {
+          background-color: #F7C779; }
+      .onlineTopicCount .onlineTopicCount-wrapper .onlineTopicCount-lengend .onlineTopicCount-number {
+        color: #000; }
+
+.divisionStudAFD {
+  text-align: center; }
+  .divisionStudAFD .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-top: 1.5625rem; }
+    .divisionStudAFD .wrapper .AFD-item {
+      justify-content: space-evenly;
+      align-items: center;
+      width: 33%; }
+      .divisionStudAFD .wrapper .AFD-item .echart-container {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-bottom: 0.625rem; }
+        .divisionStudAFD .wrapper .AFD-item .echart-container div {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto; }
+
+.divisionStudAvgOfflineHour {
+  text-align: center; }
+  .divisionStudAvgOfflineHour .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-top: 1.5625rem; }
+    .divisionStudAvgOfflineHour .wrapper .item {
+      justify-content: space-evenly;
+      align-items: center;
+      width: 33%; }
+      .divisionStudAvgOfflineHour .wrapper .item .item-value {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-bottom: 0.625rem; }
+        .divisionStudAvgOfflineHour .wrapper .item .item-value .value-bg {
+          color: #fff;
+          background: url(../asset/images/circle-bg.png);
+          background-position: 100% 100%;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+          font-size: 0.25rem; }
+
+.youngStudOfflineSummary {
+  text-align: center; }
+  .youngStudOfflineSummary .wrapper {
+    display: flex;
+    flex-direction: row; }
+    .youngStudOfflineSummary .wrapper .item {
+      justify-content: space-evenly;
+      align-items: center;
+      width: 33%; }
+      .youngStudOfflineSummary .wrapper .item .proportion-container {
+        width: 40px;
+        height: 80px;
+        margin: 10px auto;
+        margin: 0.625rem auto; }
+      .youngStudOfflineSummary .wrapper .item .item-title {
+        margin-top: 10px;
+        margin-top: 0.625rem; }
+
+.superiorClassSummary {
+  text-align: center; }
+  .superiorClassSummary .wrapper {
+    display: flex;
+    flex-direction: row; }
+    .superiorClassSummary .wrapper .ajustification {
+      width: 45%; }
+    .superiorClassSummary .wrapper .legend-container {
+      width: 10%;
+      padding-top: 15px;
+      padding-top: 0.9375rem; }
+      .superiorClassSummary .wrapper .legend-container .legend {
+        margin-bottom: 10px;
+        margin-bottom: 0.625rem; }
+        .superiorClassSummary .wrapper .legend-container .legend .icon {
+          width: 20px;
+          height: 15px;
+          margin: 5px auto;
+          margin: 0.3125rem auto; }
+      .superiorClassSummary .wrapper .legend-container .central .icon {
+        background: #389FFD; }
+      .superiorClassSummary .wrapper .legend-container .province .icon {
+        background: #55D0D0; }
+    .superiorClassSummary .wrapper .completion {
+      width: 45%; }
+    .superiorClassSummary .wrapper .echart-container {
+      height: 120px; }
+
+.avgOnlineHour {
+  text-align: center; }
+  .avgOnlineHour .wrapper {
+    display: flex;
+    flex-direction: row; }
+    .avgOnlineHour .wrapper .item {
+      justify-content: space-evenly;
+      align-items: center;
+      width: 33%; }
+      .avgOnlineHour .wrapper .item .legend-container div {
+        display: inline-block; }
+      .avgOnlineHour .wrapper .item .legend-container .icon {
+        width: 15px;
+        height: 10px;
+        margin: 0 auto; }
+      .avgOnlineHour .wrapper .item .legend-container .text {
+        font-size: 0.15rem;
+        margin-left: 5px;
+        margin-left: 0.3125rem; }
+      .avgOnlineHour .wrapper .item .section .icon {
+        background: #F7C779; }
+      .avgOnlineHour .wrapper .item .division .icon {
+        background: #F3FD1C; }
+      .avgOnlineHour .wrapper .item .echart-container {
+        height: 80px;
+        width: 100%; }
+        .avgOnlineHour .wrapper .item .echart-container > div {
+          width: 100%;
+          height: 100%; }
+      .avgOnlineHour .wrapper .item .item-title {
+        margin-top: 10px;
+        margin-top: 0.625rem; }
+
+.onlineACH {
+  text-align: center; }
+  .onlineACH .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-top: 1.5625rem; }
+    .onlineACH .wrapper .item {
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%; }
+      .onlineACH .wrapper .item .echart-container {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-bottom: 0.625rem; }
+        .onlineACH .wrapper .item .echart-container div {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto; }
+
+.topicClassesSummary {
+  text-align: center; }
+  .topicClassesSummary .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    padding: 0px 10px;
+    padding: 0 0.625rem; }
+    .topicClassesSummary .wrapper .class-count {
+      display: flex;
+      flex-direction: row; }
+      .topicClassesSummary .wrapper .class-count .text-container {
+        width: 40%; }
+      .topicClassesSummary .wrapper .class-count .value-container {
+        padding-top: 30px;
+        padding-top: 1.875rem;
+        width: 60%; }
+        .topicClassesSummary .wrapper .class-count .value-container .value-bg {
+          background: url(../asset/images/circle-bg.png);
+          background-position: 100% 100%;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+          font-size: 0.25rem;
+          color: #fff; }
+    .topicClassesSummary .wrapper .text-container {
+      display: table;
+      height: 100%; }
+      .topicClassesSummary .wrapper .text-container .text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 0.175rem; }
+    .topicClassesSummary .wrapper .stud-AFD {
+      display: flex;
+      flex-direction: column; }
+      .topicClassesSummary .wrapper .stud-AFD .AFD {
+        height: 50%;
+        display: flex;
+        flex-direction: row; }
+        .topicClassesSummary .wrapper .stud-AFD .AFD .echart-container {
+          width: 60px;
+          height: 100%; }
+
+.onlineHourRank .wrapper {
+  padding: 10px;
+  padding: 0.625rem; }
+  .onlineHourRank .wrapper table {
+    width: 100%;
+    margin-top: -10px;
+    margin-top: -0.625rem; }
+    .onlineHourRank .wrapper table thead tr {
+      height: 30px; }
+      .onlineHourRank .wrapper table thead tr th {
+        color: #8a8a8a;
+        text-align: center; }
+    .onlineHourRank .wrapper table tbody tr {
+      height: 40px; }
+      .onlineHourRank .wrapper table tbody tr td {
+        text-align: center;
+        line-height: 0.25rem; }
+        .onlineHourRank .wrapper table tbody tr td .rank {
+          display: inline-block;
+          border-radius: 50%;
+          width: 0.25rem;
+          height: 0.25rem;
+          margin-right: 5px;
+          margin-right: 0.3125rem;
+          vertical-align: top;
+          border: 1px solid #1e6faa; }
+
+.netAcademy .wrapper {
+  text-align: center;
+  font-size: 0.225rem;
+  position: relative;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 15px;
+  padding-right: 0.9375rem; }
+  .netAcademy .wrapper .city-academy {
+    width: 100%;
+    height: 100px;
+    background-color: #EEE;
+    margin: 0 auto;
+    display: table; }
+    .netAcademy .wrapper .city-academy .academy-name {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle; }
+    .netAcademy .wrapper .city-academy .academy-name::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid #000; }
+  .netAcademy .wrapper .branch-academy {
+    width: 100%;
+    margin: 0 auto; }
+    .netAcademy .wrapper .branch-academy .item {
+      margin-top: 9px;
+      margin-top: 0.5625rem;
+      border-bottom: 25px solid #EEE; }
+
+.netAcademy .wrapper::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: -10px;
+  left: 50%;
+  background: #eee;
+  z-index: -1;
+  transform: translateX(-50%); }
+
+.netAcademy .wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: #eee;
+  z-index: -1;
+  top: 35px;
+  left: 0px; }
+
+.offlineTrainSummary {
+  width: 100%;
+  height: 100%; }
+  .offlineTrainSummary .offlineTrainSummary-wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexcolumn {
+      margin-left: 20px;
+      margin-left: 1.25rem;
+      margin-right: 20px;
+      margin-right: 1.25rem; }
+    .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow {
+      margin-bottom: 7px;
+      margin-bottom: 0.4375rem; }
+      .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-legend {
+        width: 100%; }
+        .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-legend .visual-offline-column {
+          width: 25%;
+          display: flex; }
+          .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-legend .visual-offline-column .visual-legend {
+            margin-top: 6px;
+            margin-top: 0.375rem; }
+          .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-legend .visual-offline-column .visual-offline-title {
+            margin-left: 20px;
+            margin-left: 1.25rem; }
+      .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-data {
+        width: 100%; }
+        .offlineTrainSummary .offlineTrainSummary-wrapper .visual-flexrow.visual-offline-data .visual-offline-column {
+          width: 25%; }
+    .offlineTrainSummary .offlineTrainSummary-wrapper .visual-legend {
+      width: 25px;
+      height: 5px;
+      border-radius: 5px; }
+    .offlineTrainSummary .offlineTrainSummary-wrapper .wrapper .visual-progressBar {
+      margin: 8px 0px;
+      margin: 0.5rem 0; }
+
+.offlineTrainSituation {
+  width: 100%;
+  height: 100%; }
+  .offlineTrainSituation .visual-offline-wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .offlineTrainSituation .visual-offline-wrapper .visual-offline-round {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number {
+          font-size: 16px;
+          font-size: 1rem;
+          font-weight: bolder; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-green {
+            color: #00ffce; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-yellow {
+            color: #fae61b; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-red {
+            color: #e77c6c; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-blue {
+            color: #00fefb; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-green-flat {
+            color: #00ab8a; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-yellow-flat {
+            color: #fa821b; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-red-flat {
+            color: #ef4b32; }
+          .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundImage .visual-offline-number.font-blue-flat {
+            color: #0164b8; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .red {
+        background: url(../asset/images/offlineBgRed.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .blue {
+        background: url(../asset/images/offlineBgBlue.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .green {
+        background: url(../asset/images/offlineBgGreen.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .yellow {
+        background: url(../asset/images/offlineBgYellow.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .redflat {
+        background: url(../asset/images/offlineBgRedFlat.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .blueflat {
+        background: url(../asset/images/offlineBgBlueFlat.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .greenflat {
+        background: url(../asset/images/offlineBgGreenFlat.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .yellowflat {
+        background: url(../asset/images/offlineBgYellowFlat.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%; }
+      .offlineTrainSituation .visual-offline-wrapper .visual-offline-round .visual-offline-roundTitle {
+        margin-top: 10px;
+        margin-top: 0.625rem;
+        color: #aaddff; }
+
+.theoryTrainDis {
+  width: 100%;
+  height: 100%; }
+  .theoryTrainDis .visual-theory-wrapper {
+    height: 80%;
+    cursor: pointer; }
+
+.specialTrainDis {
+  width: 100%;
+  height: 100%; }
+  .specialTrainDis .visual-special-wrapper {
+    height: 80%; }
+
+.portalEntry {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%; }
+  .portalEntry .visual-portal-wrapper-scifi {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background: url(../asset/images/portalBg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px 2px;
+    margin: 0 0.125rem;
+    border-left: 1px solid #1e6faa;
+    border-right: 1px solid #1e6faa; }
+    .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner {
+      width: 100%;
+      height: 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-portal-title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-portal-title a {
+          color: #00fefb;
+          font-size: 20px;
+          font-size: 1.25rem;
+          opacity: 70%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-left-top-small {
+        background: url(../asset/images/leftTopSmall.png);
+        width: 33px;
+        height: 19px;
+        position: absolute;
+        left: -8px;
+        top: -8px;
+        background-size: 100% 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-right-top-small {
+        background: url(../asset/images/rightTopSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        right: -8px;
+        top: -8px;
+        background-size: 100% 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-left-bottom-small {
+        background: url(../asset/images/leftBottomSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        left: -8px;
+        bottom: -8px;
+        background-size: 100% 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-right-bottom-small {
+        background: url(../asset/images/rightBottomSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        right: -8px;
+        bottom: -8px;
+        background-size: 100% 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-margin-top-small {
+        background: url(../asset/images/marginTopSmall.png);
+        position: absolute;
+        width: 100%;
+        height: 9px;
+        top: -2px;
+        background-size: 100% 100%; }
+      .portalEntry .visual-portal-wrapper-scifi .visual-portal-wrapper-inner .visual-margin-bottom-small {
+        background: url(../asset/images/marginBottomSmall.png);
+        position: absolute;
+        width: 100%;
+        height: 9px;
+        bottom: -2px;
+        background-size: 100% 100%; }
+  .portalEntry .visual-portal-wrapper-flat {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    margin: 0px 2px;
+    margin: 0 0.125rem; }
+    .portalEntry .visual-portal-wrapper-flat .visual-portal-wrapper-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+      font-size: 0.6875rem; }
+      .portalEntry .visual-portal-wrapper-flat .visual-portal-wrapper-inner a {
+        color: #232c3b; }
+
+.mainIndex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row; }
+  .mainIndex .visual-mainIndex-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .mainIndex .visual-mainIndex-round .visual-mainIndex-roundImage {
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer; }
+      .mainIndex .visual-mainIndex-round .visual-mainIndex-roundImage .visual-mainIndex-number {
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: bolder; }
+      .mainIndex .visual-mainIndex-round .visual-mainIndex-roundImage .visual-mainIndex-roundTitle {
+        font-size: 14px;
+        font-size: 0.875rem; }
+    .mainIndex .visual-mainIndex-round .blue {
+      background: url(../asset/images/spanCircleBlue.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%; }
+    .mainIndex .visual-mainIndex-round .blueFlat {
+      background: url(../asset/images/spanCircleBlueFlat.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%; }
+    .mainIndex .visual-mainIndex-round .yellow {
+      background: url(../asset/images/spanCircleYellow.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%; }
+    .mainIndex .visual-mainIndex-round .yellowFlat {
+      background: url(../asset/images/spanCircleYellowFlat.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%; }
+    .mainIndex .visual-mainIndex-round .white {
+      background: url(../asset/images/spanCircleWhite.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%; }
+  .mainIndex .visual-trainCompletion-wrapper {
+    align-items: center; }
+    .mainIndex .visual-trainCompletion-wrapper .visual-trainCompletion-index {
+      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
+      font-size: 14px;
+      font-size: 0.875rem;
+      cursor: pointer; }
+    .mainIndex .visual-trainCompletion-wrapper .visual-trainCompletion-des {
+      font-size: 16px;
+      font-size: 1rem; }
+    .mainIndex .visual-trainCompletion-wrapper .visual-trainCompletion-panel {
+      cursor: pointer; }
+
+.studAvgOnlineHour {
+  height: 100%; }
+  .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-scifi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%; }
+    .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-scifi .visual-studAvgOnlineHour-box {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-scifi .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-number {
+        color: #ecc95f;
+        font-size: 24px;
+        font-size: 1.5rem;
+        cursor: pointer; }
+      .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-scifi .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-bg {
+        background: url(../asset/images/lineBg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100px;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-bottom: 0.3125rem; }
+      .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-scifi .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-title {
+        color: #aaddff;
+        margin-top: 10px;
+        margin-top: 0.625rem; }
+  .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%; }
+    .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box {
+      width: 70%;
+      height: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f7fd;
+      border-radius: 10px; }
+      .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-left {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefef;
+        border-radius: 15px; }
+        .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-left .visual-studAvgOnlineHour-iconBlue {
+          background: url(../asset/images/avatarBgBlue.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 15px;
+          height: 15px; }
+        .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-left .visual-studAvgOnlineHour-iconYellow {
+          background: url(../asset/images/avatarBgYellow.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 15px;
+          height: 15px; }
+      .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-right {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-right .visual-studAvgOnlineHour-number {
+          color: #3753d2;
+          font-size: 10px;
+          font-size: 0.625rem;
+          cursor: pointer; }
+        .studAvgOnlineHour .visual-studAvgOnlineHour-wrapper-flat .visual-studAvgOnlineHour-box .visual-studAvgOnlineHour-box-right .visual-studAvgOnlineHour-title {
+          color: #42526e;
+          font-size: 10px;
+          font-size: 0.625rem;
+          margin-top: 10px;
+          margin-top: 0.625rem; }
+
+.internetEduResource {
+  height: 100%; }
+  .internetEduResource .visual-internetEduResource-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly; }
+    .internetEduResource .visual-internetEduResource-wrapper .visual-internetEduResource-progress {
+      height: 50px; }
+
+.onlineTrainACH {
+  height: 100%; }
+  .onlineTrainACH .visual-onlineTrainACH-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly; }
+    .onlineTrainACH .visual-onlineTrainACH-wrapper .visual-onlineTrainACH-progress {
+      height: 50px; }
+
+/* biz */

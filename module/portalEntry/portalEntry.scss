@@ -1,0 +1,108 @@
+.portalEntry{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  .visual-portal-wrapper-scifi{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background: url(../asset/images/portalBg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px 2px;
+    border-left: 1px solid #1e6faa;
+    border-right: 1px solid #1e6faa;
+    .visual-portal-wrapper-inner{
+      width: 100%;
+      height: 100%;
+      .visual-portal-title{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          color: $mainBlue;
+          font-size: 20px;
+          opacity: 70%;
+        }
+      }
+      .visual-left-top-small{
+        background: url(../asset/images/leftTopSmall.png);
+        width: 33px;
+        height: 19px;
+        position: absolute;
+        left: -8px;
+        top: -8px;
+        background-size: 100% 100%;
+      }
+  
+      .visual-right-top-small{
+        background: url(../asset/images/rightTopSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        right: -8px;
+        top: -8px;
+        background-size: 100% 100%;
+      }
+  
+      .visual-left-bottom-small{
+        background: url(../asset/images/leftBottomSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        left: -8px;
+        bottom: -8px;
+        background-size: 100% 100%;
+      }
+  
+      .visual-right-bottom-small{
+        background: url(../asset/images/rightBottomSmall.png);
+        position: absolute;
+        width: 33px;
+        height: 19px;
+        right: -8px;
+        bottom: -8px;
+        background-size: 100% 100%;
+      }
+  
+      .visual-margin-top-small{
+        background: url(../asset/images/marginTopSmall.png);
+        position: absolute;
+        width: 100%;
+        height: 9px;
+        top: -2px;
+        background-size: 100% 100%;
+      }
+  
+      .visual-margin-bottom-small{
+        background: url(../asset/images/marginBottomSmall.png);
+        position: absolute;
+        width: 100%;
+        height: 9px;
+        bottom: -2px;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .visual-portal-wrapper-flat{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    margin: 0px 2px;
+    .visual-portal-wrapper-inner{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+      a{
+        color: #232c3b;
+      }
+    }
+  }
+}

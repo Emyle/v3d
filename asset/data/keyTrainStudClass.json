@@ -1,0 +1,77 @@
+{
+    "model":{
+        "allDataCount": 100,
+        "curPageData": [
+            {
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "1",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            },
+            {
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "2",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            },{
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "1",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            },
+            {
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "2",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            },{
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "1",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            },
+            {
+                "id": "1",
+                "year": "2021",
+                "studId": "1",
+                "name": "徐国龙", 
+                "jobTitle": "市委常委、常务副市长", 
+                "classId": "2",
+                "className": "数字化改革推进“整体智治”高级研修班", 
+                "trainingStartDate": "2021-01-01", 
+                "trainingEndDate": "2021-02-01",
+                "score": 78
+            }
+        ]
+    }
+}

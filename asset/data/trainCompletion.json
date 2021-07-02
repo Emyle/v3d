@@ -1,0 +1,8 @@
+{
+    "model":[
+        {"year": "2021", "offlineHours": 300, "studCount": 10, "standard": 110},
+        {"year": "2020", "offlineHours": 300, "studCount": 10, "standard": 110},
+        {"year": "2019", "offlineHours": 300, "studCount": 10, "standard": 110},
+        {"year": "2018", "offlineHours": 300, "studCount": 10, "standard": 110}
+    ]
+}

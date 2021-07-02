@@ -1,0 +1,13 @@
+<div class="visual-module" id="section-12">
+	<div class="divisionStudAvgOfflineHour">
+		<div class="visual-title">县处级干部人均脱产学时</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in data" class="item" :ref="'divisionStudAvgOfflineHour' + index">
+				<div class="item-value">
+					<div class="value-bg" v-bind:style="style">{{Math.round(item.classHour/item.studentCount)}}</div>
+				</div>
+				<div class="item-title visual-number">{{item.year}}</div>
+			</div>
+		</div>
+	</div>
+</div>

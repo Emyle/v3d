@@ -1,0 +1,23 @@
+<div class="visual-module" id="section-19">
+	<div class="onlineHourRank">
+		<div class="visual-title">当年网络培训学时排行榜</div>
+		<div class="wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th style="width:30%;">干部</th>
+						<th style="width:40%;">市级部门</th>
+						<th style="width:30%;">区县市</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="(item , index) in data">
+						<td data-code="student"><div class="rank">{{index + 1}}</div>{{item.student}}</td>
+						<td data-code="city"><div class="rank">{{index + 1}}</div>{{item.city}}</td>
+						<td data-code="county"><div class="rank">{{index + 1}}</div>{{item.county}}</td>
+					</tr>
+				</tbody>  
+			</table>
+		</div>
+	</div>
+</div>

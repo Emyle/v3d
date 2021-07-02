@@ -1,0 +1,58 @@
+<section class="width100 height100 visual-module" id="module-4">
+  <div class="offlineTrainSituation">
+		<div v-html="titleHtml" class="visual-title">
+		</div>
+    <div v-if="type == 'scifi'" class="visual-offline-wrapper">
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round1" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage green">
+          <div class="visual-offline-number font-green">{{offlineTrainStudCountComputed}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">培训总人次</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round2" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage yellow">
+          <div class="visual-offline-number font-yellow">{{offlineTrainMainClassCount}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">主体班次数</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round3" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage red">
+          <div class="visual-offline-number font-red">{{offlineTrainClassCount}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">开设班级数</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round4" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage blue">
+          <div class="visual-offline-number font-blue">{{offlineDivisionStudAFDComputed}}%</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">干部调训率</div>
+      </div>
+    </div>
+    <div v-else="type == 'flat'" class="visual-offline-wrapper">
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round1" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage greenflat">
+          <div class="visual-offline-number font-green-flat">{{offlineTrainStudCountComputed}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">培训总人次</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round2" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage yellowflat">
+          <div class="visual-offline-number font-yellow-flat">{{offlineTrainMainClassCount}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">主体班次数</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round3" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage redflat">
+          <div class="visual-offline-number font-red-flat">{{offlineTrainClassCount}}</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">开设班级数</div>
+      </div>
+      <div class="visual-offline-round" id="visual-offlineTrainSituation-round4" :style="{width: circleBgWidth, height: circleBgHeight, backgroundColor: cicleBgColor ,padding: cicleBgpadding, margin: cicleBgmargin, borderRadius: cicleBgborderRadius}">
+        <div class="visual-offline-roundImage blueflat">
+          <div class="visual-offline-number font-blue-flat">{{offlineDivisionStudAFDComputed}}%</div>
+        </div>
+        <div class="visual-offline-roundTitle" :style="{color: titleColor}">干部调训率</div>
+      </div>
+    </div>
+  </div>
+</section>

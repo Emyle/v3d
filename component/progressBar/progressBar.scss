@@ -1,0 +1,32 @@
+.visual-progressBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  .visual-progressBar-title{
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .visual-progressBar-background{
+    width: 60%;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    .visual-progressBar-value-container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .visual-progressBar-value{
+        margin: 0px 2px;
+      }
+    }
+  }
+  .visual-progressBar-max{
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,98 @@
+html, body, .body-wrap {
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: #efefef; }
+  html .visual-screen-wrapper, body .visual-screen-wrapper, .body-wrap .visual-screen-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex; }
+    html .visual-screen-wrapper .visual-module, body .visual-screen-wrapper .visual-module, .body-wrap .visual-screen-wrapper .visual-module {
+      background-color: #ffffff; }
+    html .visual-screen-wrapper .visual-left, body .visual-screen-wrapper .visual-left, .body-wrap .visual-screen-wrapper .visual-left {
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      html .visual-screen-wrapper .visual-left .visual-left-top, body .visual-screen-wrapper .visual-left .visual-left-top, .body-wrap .visual-screen-wrapper .visual-left .visual-left-top {
+        padding: 3px;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row; }
+      html .visual-screen-wrapper .visual-left .visual-left-middle, body .visual-screen-wrapper .visual-left .visual-left-middle, .body-wrap .visual-screen-wrapper .visual-left .visual-left-middle {
+        padding: 3px;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row; }
+      html .visual-screen-wrapper .visual-left .visual-left-bottom, body .visual-screen-wrapper .visual-left .visual-left-bottom, .body-wrap .visual-screen-wrapper .visual-left .visual-left-bottom {
+        padding: 3px;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row; }
+    html .visual-screen-wrapper .visual-middle, body .visual-screen-wrapper .visual-middle, .body-wrap .visual-screen-wrapper .visual-middle {
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      html .visual-screen-wrapper .visual-middle .visual-middle-top, body .visual-screen-wrapper .visual-middle .visual-middle-top, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-top {
+        padding: 3px;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative; }
+      html .visual-screen-wrapper .visual-middle .visual-middle-middle, body .visual-screen-wrapper .visual-middle .visual-middle-middle, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle {
+        padding: 3px;
+        width: 100%;
+        height: 35%; }
+        html .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top, body .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top {
+          padding-bottom: 5px; }
+          html .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-5, body .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-5, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-5 {
+            border-right: 2px solid #efefef; }
+          html .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-6, body .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-6, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle .visual-middle-middle-top #module-6 {
+            border-left: 2px solid #efefef; }
+        html .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry1, body .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry1, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry1 {
+          margin: 0px 2px 0px 0px; }
+        html .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry2, body .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry2, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry2 {
+          margin: 0px 2px; }
+        html .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry3, body .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry3, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry3 {
+          margin: 0px 2px; }
+        html .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry4, body .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry4, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-middle #module-7 #visual-portal-entry4 {
+          margin: 0px 0px 0px 2px; }
+      html .visual-screen-wrapper .visual-middle .visual-middle-bottom, body .visual-screen-wrapper .visual-middle .visual-middle-bottom, .body-wrap .visual-screen-wrapper .visual-middle .visual-middle-bottom {
+        padding: 3px;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+    html .visual-screen-wrapper .visual-right, body .visual-screen-wrapper .visual-right, .body-wrap .visual-screen-wrapper .visual-right {
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      html .visual-screen-wrapper .visual-right .visual-right-top, body .visual-screen-wrapper .visual-right .visual-right-top, .body-wrap .visual-screen-wrapper .visual-right .visual-right-top {
+        padding: 3px;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        html .visual-screen-wrapper .visual-right .visual-right-top #module-9, body .visual-screen-wrapper .visual-right .visual-right-top #module-9, .body-wrap .visual-screen-wrapper .visual-right .visual-right-top #module-9 {
+          border-right: 2px solid #efefef; }
+        html .visual-screen-wrapper .visual-right .visual-right-top #module-10, body .visual-screen-wrapper .visual-right .visual-right-top #module-10, .body-wrap .visual-screen-wrapper .visual-right .visual-right-top #module-10 {
+          border-left: 2px solid #efefef; }
+      html .visual-screen-wrapper .visual-right .visual-right-middle, body .visual-screen-wrapper .visual-right .visual-right-middle, .body-wrap .visual-screen-wrapper .visual-right .visual-right-middle {
+        padding: 3px;
+        width: 100%;
+        height: 30%; }
+      html .visual-screen-wrapper .visual-right .visual-right-bottom, body .visual-screen-wrapper .visual-right .visual-right-bottom, .body-wrap .visual-screen-wrapper .visual-right .visual-right-bottom {
+        padding: 3px;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }

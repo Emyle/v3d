@@ -1,0 +1,128 @@
+@import '../../scss/variables.scss';
+
+html, body, .body-wrap{
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: $bgColor;
+  .visual-screen-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .visual-module{
+      background-color: #ffffff;
+    }
+
+    .visual-left{
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .visual-left-top{
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction:row;
+      }
+      .visual-left-middle{
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction:row;
+      }
+      .visual-left-bottom{
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction:row;
+      }
+    }
+    .visual-middle{
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .visual-middle-top {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+      }
+      .visual-middle-middle {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 35%;
+        .visual-middle-middle-top{
+          padding-bottom: 5px; // temp
+          #module-5{
+             border-right: 2px solid #efefef;
+          }
+          #module-6{
+             border-left: 2px solid #efefef;
+          }
+        }
+        #module-7{
+          #visual-portal-entry1{
+            margin: 0px 2px 0px 0px;
+          }
+          #visual-portal-entry2{
+            margin: 0px 2px;
+          }
+          #visual-portal-entry3{
+            margin: 0px 2px;
+          }
+          #visual-portal-entry4{
+            margin: 0px 0px 0px 2px;
+          }
+        }
+      }
+      .visual-middle-bottom {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+    .visual-right{
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .visual-right-top {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        #module-9{
+          border-right: 2px solid #efefef;
+        }
+        #module-10{
+          border-left: 2px solid #efefef;
+        }
+      }
+      .visual-right-middle {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 30%;
+      }
+      .visual-right-bottom {
+        padding: $borderPaddingPc;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+

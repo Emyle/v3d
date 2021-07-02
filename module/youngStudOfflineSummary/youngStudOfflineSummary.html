@@ -1,0 +1,13 @@
+<div class="visual-module" id="section-13">
+	<div class="youngStudOfflineSummary">
+		<div class="visual-title">当年年轻干部脱产培训概况</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in data" class="item">
+				<div class="item-value visual-number">{{item.itemValue}}</div>
+				<div class="proportion-container" :ref="'youngStudOfflineSummary' + index">
+				</div>
+				<div class="item-title visual-number">{{item.title}}</div>
+			</div>
+		</div>
+	</div>
+</div>

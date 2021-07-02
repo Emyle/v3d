@@ -1,0 +1,29 @@
+{
+  "name": "visual",
+  "version": "1.0.0",
+  "description": "a toolkit for ebaize visual project",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "sass": "npm run sass-dev-index && npm run sass-dev-biz && npm run pixToRem",
+    "sass-dev-index": "node-sass -r scss/index.scss -o css",
+    "sass-dev-biz": "node-sass -r biz -o css",
+    "sass-build": "node-sass -r scss/index.scss -o dist --output-style compressed",
+    "sass-sourcemap": "node-sass -r scss/index.scss -o css --source-map true",
+    "pixToRem": "node index.js"
+  },
+  "keywords": [
+    "visual",
+    "sass"
+  ],
+  "author": "renkaiguang",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.12",
+    "postcss-pxtorem": "^6.0.0",
+    "sass-loader": "^11.0.1"
+  }
+}

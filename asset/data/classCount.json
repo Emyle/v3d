@@ -1,0 +1,7 @@
+{
+    "model":[
+        {"name": "主体班", "type": "1", "value": 50 },
+        {"name": "专题班", "type": "2", "value": 40 },
+        {"name": "轮训班", "type": "3", "value": 70 }
+    ]
+}

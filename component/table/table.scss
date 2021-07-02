@@ -1,0 +1,35 @@
+.visual-table {
+    width:100%;
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    .tr {
+        display: flex;
+        flex-direction: row;
+        .td {
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow:ellipsis;
+            padding: 0px 5px;
+        }
+    }
+    .tbl-header {
+        width: 100%;
+    }
+    .tbl-body {
+        overflow: hidden;
+        .visual-marquee {
+            animation: visual-table-row  10s linear infinite;
+        }
+        .visual-marquee:hover {
+            animation-play-state: paused;
+        }
+    }
+    
+}
+
+@keyframes visual-table-row{
+    0%{}
+    100%{
+      transform: translateY(-50%);
+    }
+}

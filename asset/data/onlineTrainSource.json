@@ -1,0 +1,7 @@
+{
+    "model":{
+        "topic": {"history": 43, "thisYear": 5},
+        "courseWare": {"history": 2560, "thisYear": 80},
+        "class": {"history": 110, "thisYear": 7}
+    }
+}

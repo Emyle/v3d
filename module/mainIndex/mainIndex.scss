@@ -1,0 +1,83 @@
+.mainIndex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  .visual-mainIndex-round{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .visual-mainIndex-roundImage{
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      .visual-mainIndex-number{
+        font-size: 14px;
+        font-weight: bolder;
+      }
+      .visual-mainIndex-roundTitle{
+        font-size: 14px;
+      }
+    }
+
+    .blue{
+      background: url(../asset/images/spanCircleBlue.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+
+    .blueFlat{
+      background: url(../asset/images/spanCircleBlueFlat.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+
+    .yellow{
+      background: url(../asset/images/spanCircleYellow.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+
+    .yellowFlat{
+      background: url(../asset/images/spanCircleYellowFlat.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+
+    .white{
+      background: url(../asset/images/spanCircleWhite.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+  }
+
+  .visual-trainCompletion-wrapper{
+    align-items: center;
+
+    .visual-trainCompletion-index{
+      margin-bottom: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .visual-trainCompletion-des{
+      font-size: 16px;
+    }
+
+    .visual-trainCompletion-panel{
+      cursor: pointer;
+    }
+  }
+
+  
+}

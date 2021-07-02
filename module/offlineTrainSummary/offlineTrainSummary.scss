@@ -1,0 +1,64 @@
+.offlineTrainSummary{
+  width: 100%;
+  height: 100%;
+  .offlineTrainSummary-wrapper{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .visual-flexcolumn{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .visual-flexrow{
+      margin-bottom: 7px;
+      &.visual-offline-legend{
+        width: 100%;
+        .visual-offline-column{
+          width: 25%;
+          display: flex;
+          .visual-legend{
+            margin-top: 6px;
+          }
+  
+          .visual-offline-title{
+            margin-left: 20px;
+          }
+  
+          // .red{
+          //   background-color: $mainRed;
+          // }
+    
+          // .yellow{
+          //   background-color: $mainYellow;
+          // }
+    
+          // .blue{
+          //   background-color: $mainBlue;
+          // }
+        }
+      }
+  
+      &.visual-offline-data{
+        width: 100%;
+        .visual-offline-column{
+          width: 25%;
+        }
+      }
+    }
+  
+  
+    .visual-legend{
+      width: 25px;
+      height: 5px;
+      border-radius: 5px;
+    }
+  
+    .wrapper{
+      .visual-progressBar{
+        margin: 8px 0px;
+      }
+    }
+  }
+}

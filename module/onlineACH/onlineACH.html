@@ -1,0 +1,12 @@
+<div class="visual-module" id="section-18">
+	<div class="onlineACH">
+		<div class="visual-title">当年干部网络培训考核各级干部达标率</div>
+		<div class="wrapper">
+			<div v-for="(item , index) in data" class="item">
+				<div class="echart-container" :ref="'onlineACH' + index">
+				</div>
+				<div class="item-title visual-number">{{item.title}}</div>
+			</div>
+		</div>
+	</div>
+</div>

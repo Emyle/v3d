@@ -1,0 +1,7 @@
+{
+    "model": [
+        {"year": 2021, "classHour": 110, "studentCount": 20},
+        {"year": 2020, "classHour": 110, "studentCount": 10},
+        {"year": 2019, "classHour": 110, "studentCount": 15}
+    ]
+}

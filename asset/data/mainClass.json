@@ -1,0 +1,68 @@
+{
+    "model":[
+        {
+            "id": "1",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        },
+        {
+            "id": "2",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        },{
+            "id": "1",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        },
+        {
+            "id": "2",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        },{
+            "id": "5",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        },
+        {
+            "id": "6",
+            "name": "数字化改革推进“整体智治”高级研修班", 
+            "trainingStartDate": "2021-01-01", 
+            "trainingEndDate": "2021-02-01", 
+            "studCount": 200, 
+            "examine": 220,
+            "assess": 93,
+            "opinion": "有",
+            "state": "准备中"
+        }
+    ]
+}

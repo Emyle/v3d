@@ -1,0 +1,45 @@
+{
+    "model": [
+        {
+            "year": "2021", 
+            "planClassCount": 25, 
+            "classes": [
+                {"name": "理论党性班", "code": "1", "classCount": 5, "provinceStudCount": 554, "cityStudCount": 453, "sectionStudCount": 0},
+                {"name": "专题研讨班", "code": "2", "classCount": 3, "provinceStudCount": 356, "cityStudCount": 374, "sectionStudCount": 0},
+                {"name": "精神轮训班", "code": "3", "classCount": 1, "provinceStudCount": 900, "cityStudCount": 389, "sectionStudCount": 0},
+                {"name": "上级调训班", "code": "4", "classCount": 4, "provinceStudCount": 38, "cityStudCount": 76, "sectionStudCount": 4}
+            ]
+        },
+        {
+            "year": "2020", 
+            "planClassCount": 25, 
+            "classes": [
+                {"name": "理论党性班", "code": "1", "classCount": 5, "provinceStudCount": 554, "cityStudCount": 453, "sectionStudCount": 0},
+                {"name": "专题研讨班", "code": "2", "classCount": 3, "provinceStudCount": 356, "cityStudCount": 374, "sectionStudCount": 0},
+                {"name": "精神轮训班", "code": "3", "classCount": 1, "provinceStudCount": 900, "cityStudCount": 389, "sectionStudCount": 0},
+                {"name": "上级调训班", "code": "4", "classCount": 4, "provinceStudCount": 38, "cityStudCount": 76, "sectionStudCount": 4}
+            ]
+        },
+        {
+            "year": "2019", 
+            "planClassCount": 25, 
+            "classes": [
+                {"name": "理论党性班", "code": "1", "classCount": 5, "provinceStudCount": 554, "cityStudCount": 453, "sectionStudCount": 0},
+                {"name": "专题研讨班", "code": "2", "classCount": 3, "provinceStudCount": 356, "cityStudCount": 374, "sectionStudCount": 0},
+                {"name": "精神轮训班", "code": "3", "classCount": 1, "provinceStudCount": 900, "cityStudCount": 389, "sectionStudCount": 0},
+                {"name": "上级调训班", "code": "4", "classCount": 4, "provinceStudCount": 38, "cityStudCount": 76, "sectionStudCount": 4}
+            ]
+        },
+        {
+            "year": "2018", 
+            "planClassCount": 25, 
+            "classes": [
+                {"name": "理论党性班", "code": "1", "classCount": 5, "provinceStudCount": 554, "cityStudCount": 453, "sectionStudCount": 0},
+                {"name": "专题研讨班", "code": "2", "classCount": 3, "provinceStudCount": 356, "cityStudCount": 374, "sectionStudCount": 0},
+                {"name": "精神轮训班", "code": "3", "classCount": 1, "provinceStudCount": 900, "cityStudCount": 389, "sectionStudCount": 0},
+                {"name": "上级调训班", "code": "4", "classCount": 4, "provinceStudCount": 38, "cityStudCount": 76, "sectionStudCount": 4}
+            ]
+        }
+    ]
+
+}

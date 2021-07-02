@@ -1,0 +1,12 @@
+{
+    "model": {
+    	"trainingNum": 100,
+    	"planTrainingNum": 140,
+    	"trainingNumRate": 0.25,
+    	"classNum": 40,
+    	"planClassNum": 30,
+    	"classNumRate": 1.3,
+    	"testResults": 100,
+    	"excellentRate": 0.4
+   	}
+}
